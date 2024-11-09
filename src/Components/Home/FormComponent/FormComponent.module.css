@@ -176,6 +176,11 @@
   padding-inline: 1rem;
   color: hsl(251, 9%, 53%);
 }
+@media (min-width: 50em) {
+  .main__form-component__form__strength__wrapper {
+    height: 65px;
+  }
+}
 .main__form-component__form__strength__info {
   display: flex;
   align-items: center;
@@ -222,6 +227,9 @@
   border: 2px solid hsl(127, 100%, 82%);
 }
 @media (min-width: 50em) {
+  .main__form-component__form__submit-btn button {
+    height: 65px;
+  }
   .main__form-component__form__submit-btn button:hover {
     background-color: hsl(248, 15%, 11%);
     color: hsl(127, 100%, 82%);

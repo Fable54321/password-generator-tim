@@ -210,6 +210,10 @@
                         padding-inline: $sz-100;
                         color: $clr-neutral-500;
 
+                        @media (min-width: $query-desktop){
+                            height: 65px;
+                        }
+
                       
                     }
                     &__info {
@@ -268,6 +272,8 @@
 
                         
                         @media(min-width: $query-desktop){
+                            height: 65px;
+
                             &:hover {
                                 background-color: $clr-neutral-900;
                                 color: $clr-accent-green;

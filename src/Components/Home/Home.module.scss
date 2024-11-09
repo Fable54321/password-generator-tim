@@ -11,8 +11,9 @@
         @include m.header;
         color: $clr-neutral-500;
         
+        
         @media(min-width: $query-desktop) {
-            top:12.98828125vw;
+            top:12.98828125%;
         }
     }
     }
@@ -25,10 +26,12 @@
     display: flex;
     flex-direction: column;
     gap: $sz-100;
+    
 
     @media(min-width: $query-desktop) {
-        width: clamp(450px, 37.5vw, 900px)
-        
+        margin-top: 0;
+        width: clamp(450px, 37.5vw, 900px);
+        gap: $sz-150;
 }
 
 }
