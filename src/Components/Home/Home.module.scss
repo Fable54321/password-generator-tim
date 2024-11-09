@@ -1,0 +1,34 @@
+@use "../../Styles/abstracts/variables" as *;
+@use "../../Styles/abstracts/mixins" as m;
+
+
+.header {
+    &__title {
+        position: absolute;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include m.header;
+        color: $clr-neutral-500;
+        
+        @media(min-width: $query-desktop) {
+            top:12.98828125%;
+        }
+    }
+    }
+
+    
+
+.main {
+    width: clamp(300px, 91.466666666vw, 500px);
+    margin-top: $sz-631;
+    display: flex;
+    flex-direction: column;
+    gap: $sz-100;
+
+    @media(min-width: $query-desktop) {
+        width: clamp(450px, 37.5vw, 900px)
+        
+}
+
+}

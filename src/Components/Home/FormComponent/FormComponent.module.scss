@@ -1,0 +1,287 @@
+@use "../../../Styles/abstracts/variables" as *;
+@use "../../../Styles/abstracts/mixins" as m;
+
+.main__form-component {
+    &__form{
+        @include m.body-medium;
+        color: $clr-neutral-200;
+        background-color: $clr-neutral-600;
+        padding: $sz-100 $sz-100 $sz-100 0;
+        
+        @media(min-width: $query-desktop){
+            padding: $sz-150 $sz-200 $sz-200 $sz-200;
+        }
+        
+
+        &__length-label {
+           width:100%;
+           
+           label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: $sz-50;
+            
+
+            
+            @media(min-width: $query-desktop){
+                padding-left: 0;
+ 
+           }
+
+
+            span {
+                font-size: $fs-150;
+                color: $clr-accent-green;
+
+                @media(min-width: $query-desktop){
+                    font-size: $fs-200;
+                }
+            }
+
+        }
+
+          
+        }
+
+                &__slider {
+                    margin-top: $sz-131;
+                    position: relative;
+                    height: 0.5rem;
+                    background-color: black;
+
+                    @media(min-width: $query-desktop){
+                        margin-top: $sz-163;
+                    }
+                    
+                    
+        
+                    input[type="range"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 100%;
+                        height: 0.5rem;
+                        position: absolute;
+                        background-color: transparent;
+                        
+
+                        &::-webkit-slider-runnable-track {
+                           appearance: none;
+                           -webkit-appearance: none;
+                            
+                        }
+
+                        &::-moz-range-track {
+                            appearance: none;
+                           -moz-appearance: none;
+                        }
+
+                       &::-webkit-slider-thumb{
+                        -webkit-appearance: none;
+                        appearance: none;
+                        background-color: $clr-neutral-200;
+                        border-radius: 100vw;
+                        width: 28px;
+                        height: 28px;
+
+                        &:hover {
+                            cursor:pointer;
+                            background-color: $clr-neutral-900;
+                            border: 2px solid $clr-accent-green;
+                        }
+                       }
+
+                       &::-moz-range-thumb {
+                        -moz-appearance: none;
+                        appearance: none;
+                        background-color: $clr-neutral-200;
+                        border-radius: 100vw;
+                        width: 28px;
+                        height: 28px;
+
+                        &:hover {
+                            cursor:pointer;
+                            background-color: $clr-neutral-900;
+                            border: 2px solid $clr-accent-green;
+                        }
+
+                       }
+                        
+
+                        
+                    }
+        
+                    .sliderFill {
+                        background-color: $clr-accent-green;
+                        height: 10px;
+                        position: absolute;
+                        top: 0;
+                        height: 0.5rem;
+                        
+                    }
+        
+                }
+
+              &__checklist {
+                margin-top: $sz-200;
+                padding-left: $sz-50;
+
+                @media(min-width: $query-desktop){
+                    padding-left: 0;
+                }
+                
+
+                ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: $sz-100;
+                        align-items: flex-start;
+
+                        @media(min-width: $query-desktop){
+                            gap: $sz-125;
+                        }
+                
+                        li {
+
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content: flex-end;
+                            
+                
+                            &::marker {
+                                content: '';
+                                width:0;
+                                height:0;
+                            }
+
+                            label {
+                                display: flex;
+                                gap: $sz-131;
+
+                                div {
+                                    width: 20px;
+                                    height: 20px;
+                                    background-color: $clr-neutral-200;
+                                }
+
+                                .checkbox {
+                                    background-color: $clr-neutral-600;
+                                    border: 2px solid $clr-neutral-200;
+                                }
+
+                                .checkboxChecked {
+                                    background-color: $clr-accent-green;
+                                    background-image: url('../../../images/icon-check.svg');
+                                    background-repeat: no-repeat;
+                                    background-position:50% 50% ;
+                                }
+                            }
+
+                           input {
+                            visibility: hidden;
+                            height: 0;
+                            width: 0;
+                           }
+                
+                        }  
+                    }
+                }
+ 
+                &__strength {
+                    margin-top: $sz-200;
+                    padding-left: $sz-100;
+
+                    @media(min-width: $query-desktop){
+                        padding-left: 0;
+
+                       
+                    }  
+                    
+                    
+                   
+
+                    &__wrapper {
+                        height: 58px;
+                        background-color: $clr-neutral-900;
+                        background-size: contain ;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-inline: $sz-100;
+                        color: $clr-neutral-500;
+
+                      
+                    }
+                    &__info {
+
+                        display: flex;
+                        align-items: center;
+                        gap: $sz-50;
+                        color: $clr-neutral-200;
+
+                        &__bar{
+                            display: flex;
+                            gap: $sz-50;
+
+                            & > *{
+                                width: 10px;
+                                height: 28px;
+                                
+                                border: 2px solid $clr-neutral-200;
+                            }
+                        }
+                    }
+                }
+
+                &__submit-btn {
+                    margin-top: $sz-100;
+                    padding-left: $sz-100;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    
+
+                    @media(min-width:$query-desktop){
+                        margin-top: $sz-200;
+                        padding-left: 0;
+                    }
+
+
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: $sz-50;
+                        background-color: $clr-accent-green;
+                        background-repeat: no-repeat;
+                        background-position: 68% 50%;
+                        width: 100%;
+                        height: 56px;
+
+                        
+
+                        &:hover {
+                            background-color: $clr-neutral-900;
+                            color: $clr-accent-green;
+                            border: 2px solid $clr-accent-green;
+                            cursor: pointer;
+
+                            .filter-green {
+                                filter: invert(83%) sepia(44%) saturate(354%) hue-rotate(67deg) brightness(103%) contrast(101%);
+                            }
+                        }
+
+                        
+
+                        
+                    }
+                }
+    }
+
+
+   
+}
+
+
+

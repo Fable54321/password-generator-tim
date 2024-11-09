@@ -1,0 +1,49 @@
+/* colors */
+
+$clr-neutral-100: hsl(0,0%,100%);
+$clr-neutral-200: hsl(252,11%,91%);
+$clr-neutral-500: hsl(251,9%,53%);
+$clr-neutral-600: hsl(247,11%, 15%);
+
+$clr-neutral-900: hsl(248, 15%, 11%);
+$clr-neutral-1000: hsl(252, 26%, 4%);
+
+$clr-accent-yellow : hsl(42, 91%, 68%);
+$clr-accent-orange: hsl(13, 95%, 66%);
+$clr-accent-red: hsl(0, 91%, 63%);
+$clr-accent-green: hsl(127, 100%, 82%);
+
+/*typography*/
+
+$ff-primary: 'JetBrain Mono', 'helvetica';
+$ff-secondary: 'JetBrains Mono', 'helvetica';
+
+$fs-100: 1rem;
+$fs-113: 1.125rem;
+$fs-150: 1.5rem;
+$fs-200: 2rem;
+
+$fw-primary: 700;
+$fw-secondary: 700;
+
+
+/* spacings */
+
+$sz-50: 0.5rem;
+$sz-100: 1rem;
+$sz-125: 1.25rem;
+$sz-131: 1.3125rem;  
+$sz-150: 1.5rem;
+$sz-163: 1.625rem;
+$sz-194: 1.9375rem;
+$sz-200: 2rem;
+$sz-400: 4rem;
+$sz-500: 5rem;
+$sz-631: 6.3125rem;
+
+/*queries*/
+
+$query-desktop: 50em;
+
+
+

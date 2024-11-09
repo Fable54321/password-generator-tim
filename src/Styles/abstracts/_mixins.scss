@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+
+@mixin body-medium {
+    font-family: $ff-secondary;
+    font-size: $fs-100;
+    font-weight:$fw-secondary;
+
+    @media(min-width: $query-desktop) {
+        font-size: $fs-113;
+    }
+}
+
+@mixin header {
+    font-family: $ff-primary;
+    font-weight: $fw-primary;
+    font-size: $fs-100;
+
+    @media (min-width: $query-desktop) {
+        font-size: $fs-150;
+    }
+}
+
+
+@mixin passwordTypo {
+    font-family: $ff-secondary;
+    font-weight: $fw-secondary;
+    font-size: $fs-150;
+
+    @media(min-width: $query-desktop) {
+        font-size: $fs-200;
+    }
+}
+
+@mixin strengthTypo {
+    font-family: $ff-secondary;
+    font-weight: $fw-secondary;
+    font-size: $fs-113;
+
+    @media(min-width: $query-desktop){
+        font-size: $fs-150;
+    }
+}
