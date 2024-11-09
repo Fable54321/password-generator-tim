@@ -181,11 +181,11 @@ const FormComponent = ({
             <div
               className={styles["main__form-component__form__strength__info"]}
             >
-              <h2>{passwordStrength === 0 && null}</h2>
-              <h2>{passwordStrength === 1 && "TOO WEAK"}</h2>
-              <h2>{passwordStrength === 2 && "WEAK"}</h2>
-              <h2>{passwordStrength === 3 && "MEDIUM"}</h2>
-              <h2>{passwordStrength === 4 && "STRONG"}</h2>
+              {passwordStrength === 0 && null}
+              {passwordStrength === 1 && <h2>TOO WEAK</h2>}
+              {passwordStrength === 2 && <h2>WEAK</h2>}
+              {passwordStrength === 3 && <h2>MEDIUM</h2>}
+              {passwordStrength === 4 && <h2>STRONG</h2>}
               <div
                 className={
                   styles["main__form-component__form__strength__info__bar"]
