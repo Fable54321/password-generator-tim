@@ -19,7 +19,7 @@
 }
 @media (min-width: 50em) {
   .header__title {
-    top: 12.98828125%;
+    top: 12.98828125vw;
   }
 }
 
